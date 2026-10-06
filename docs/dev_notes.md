@@ -95,3 +95,5 @@
 
 - Verification step at 18:47:27.170 : style: check inline styles logic
 
+- Verification step at 18:47:27.273 : refactor: isolate ui components
+
