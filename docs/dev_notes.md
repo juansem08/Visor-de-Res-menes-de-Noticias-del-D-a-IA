@@ -23,3 +23,5 @@
 
 - docs: add api endpoint descriptions
 
+- chore: configure environment variables template
+
