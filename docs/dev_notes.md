@@ -85,3 +85,5 @@
 
 - Verification step at 18:47:26.674 : build: validate node modules
 
+- Verification step at 18:47:26.771 : ci: prepare tests integration
+
