@@ -55,3 +55,5 @@
 
 - chore: sync with main
 
+- perf: lazy load components
+
