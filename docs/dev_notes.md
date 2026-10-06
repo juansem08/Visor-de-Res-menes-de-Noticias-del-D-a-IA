@@ -49,3 +49,5 @@
 
 - style: fix trailing commas
 
+- fix: handle null response
+
