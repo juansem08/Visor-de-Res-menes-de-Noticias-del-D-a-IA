@@ -65,3 +65,5 @@
 
 - style: remove unused imports
 
+- fix: resolve promise correctly
+
