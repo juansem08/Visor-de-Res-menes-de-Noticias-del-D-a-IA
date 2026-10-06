@@ -43,3 +43,5 @@
 
 - test: update snapshots
 
+- chore: run linter
+
