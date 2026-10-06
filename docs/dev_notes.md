@@ -129,3 +129,5 @@
 
 - Verification step at 18:47:28.896 : chore: process code review
 
+- Verification step at 18:47:28.998 : style: format package json
+
