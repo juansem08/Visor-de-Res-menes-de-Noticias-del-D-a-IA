@@ -121,3 +121,5 @@
 
 - Verification step at 18:47:28.493 : test: validate model integration
 
+- Verification step at 18:47:28.592 : build: check typescript strict mode
+
