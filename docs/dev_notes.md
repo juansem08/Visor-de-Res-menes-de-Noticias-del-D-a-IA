@@ -33,3 +33,5 @@
 
 - refactor: separate concerns in hooks
 
+- style: enforce strict typing
+
