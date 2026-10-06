@@ -37,3 +37,5 @@
 
 - chore: bump version
 
+- docs: update readme with setup instructions
+
