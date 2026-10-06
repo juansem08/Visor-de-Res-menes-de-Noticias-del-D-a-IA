@@ -83,3 +83,5 @@
 
 - Verification step at 18:47:26.576 : chore: setup type safety verify
 
+- Verification step at 18:47:26.674 : build: validate node modules
+
