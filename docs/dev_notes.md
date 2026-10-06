@@ -57,3 +57,5 @@
 
 - perf: lazy load components
 
+- test: add integration test stubs
+
