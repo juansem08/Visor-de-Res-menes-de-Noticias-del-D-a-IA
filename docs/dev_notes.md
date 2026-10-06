@@ -53,3 +53,5 @@
 
 - docs: document component props
 
+- chore: sync with main
+
