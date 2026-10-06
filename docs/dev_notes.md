@@ -7,3 +7,5 @@
 
 - style: improve code formatting
 
+- chore: update dependencies
+
