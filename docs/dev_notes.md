@@ -93,3 +93,5 @@
 
 - Verification step at 18:47:27.073 : chore: cleanup build cache
 
+- Verification step at 18:47:27.170 : style: check inline styles logic
+
