@@ -139,3 +139,5 @@
 
 - Verification step at 18:47:29.432 : test: mock gemini responses
 
+- Verification step at 18:47:29.536 : build: dry run project build
+
