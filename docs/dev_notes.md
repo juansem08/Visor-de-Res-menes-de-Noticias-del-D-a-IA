@@ -107,3 +107,5 @@
 
 - Verification step at 18:47:27.780 : perf: evaluate hook dependencies
 
+- Verification step at 18:47:27.883 : fix: stabilize fetching state
+
