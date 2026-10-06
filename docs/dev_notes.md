@@ -103,3 +103,5 @@
 
 - Verification step at 18:47:27.572 : test: prepare unit testing logic
 
+- Verification step at 18:47:27.676 : build: verify nextjs builder
+
