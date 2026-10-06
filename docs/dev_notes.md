@@ -137,3 +137,5 @@
 
 - Verification step at 18:47:29.322 : chore: advance validation steps
 
+- Verification step at 18:47:29.432 : test: mock gemini responses
+
