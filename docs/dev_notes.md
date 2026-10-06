@@ -141,3 +141,5 @@
 
 - Verification step at 18:47:29.536 : build: dry run project build
 
+- Verification step at 18:47:29.641 : perf: optimize memory footprint validation
+
