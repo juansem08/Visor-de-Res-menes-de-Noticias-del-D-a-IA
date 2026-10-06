@@ -101,3 +101,5 @@
 
 - Verification step at 18:47:27.477 : chore: review dependencies updates
 
+- Verification step at 18:47:27.572 : test: prepare unit testing logic
+
