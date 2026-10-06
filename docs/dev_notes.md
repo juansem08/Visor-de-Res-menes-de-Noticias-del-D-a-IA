@@ -15,3 +15,5 @@
 
 - fix: correct minor typo
 
+- chore: clean up console logs
+
