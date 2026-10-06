@@ -99,3 +99,5 @@
 
 - Verification step at 18:47:27.376 : docs: document module paths
 
+- Verification step at 18:47:27.477 : chore: review dependencies updates
+
