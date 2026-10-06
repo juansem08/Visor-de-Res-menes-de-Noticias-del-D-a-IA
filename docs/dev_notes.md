@@ -19,3 +19,5 @@
 
 - refactor: extract magic strings
 
+- style: adjust indentation
+
