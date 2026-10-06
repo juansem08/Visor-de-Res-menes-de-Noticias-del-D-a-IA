@@ -39,3 +39,5 @@
 
 - docs: update readme with setup instructions
 
+- perf: memoize expensive calculations
+
