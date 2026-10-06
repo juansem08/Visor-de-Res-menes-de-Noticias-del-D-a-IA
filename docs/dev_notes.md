@@ -79,3 +79,5 @@
 
 - Verification step at 18:47:26.381 : refactor: validate types across boundaries
 
+- Verification step at 18:47:26.480 : test: check api endpoint resolution
+
