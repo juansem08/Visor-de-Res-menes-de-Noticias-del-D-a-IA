@@ -97,3 +97,5 @@
 
 - Verification step at 18:47:27.273 : refactor: isolate ui components
 
+- Verification step at 18:47:27.376 : docs: document module paths
+
