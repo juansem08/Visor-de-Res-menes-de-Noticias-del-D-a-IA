@@ -105,3 +105,5 @@
 
 - Verification step at 18:47:27.676 : build: verify nextjs builder
 
+- Verification step at 18:47:27.780 : perf: evaluate hook dependencies
+
