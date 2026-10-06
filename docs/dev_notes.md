@@ -81,3 +81,5 @@
 
 - Verification step at 18:47:26.480 : test: check api endpoint resolution
 
+- Verification step at 18:47:26.576 : chore: setup type safety verify
+
