@@ -17,3 +17,5 @@
 
 - chore: clean up console logs
 
+- refactor: extract magic strings
+
