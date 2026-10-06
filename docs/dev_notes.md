@@ -31,3 +31,5 @@
 
 - fix: handle edge case in data fetch
 
+- refactor: separate concerns in hooks
+
