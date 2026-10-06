@@ -47,3 +47,5 @@
 
 - refactor: rename variables for clarity
 
+- style: fix trailing commas
+
