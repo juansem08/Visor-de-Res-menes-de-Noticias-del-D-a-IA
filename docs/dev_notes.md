@@ -11,3 +11,5 @@
 
 - test: add unit test skeletons
 
+- perf: optimize render loops
+
