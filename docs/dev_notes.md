@@ -61,3 +61,5 @@
 
 - chore: audit packages
 
+- refactor: simplify conditional logic
+
