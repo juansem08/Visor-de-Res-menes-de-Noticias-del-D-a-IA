@@ -87,3 +87,5 @@
 
 - Verification step at 18:47:26.771 : ci: prepare tests integration
 
+- Verification step at 18:47:26.869 : perf: measure initial load skeleton
+
