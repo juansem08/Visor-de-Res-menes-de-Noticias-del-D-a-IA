@@ -113,3 +113,5 @@
 
 - Verification step at 18:47:28.080 : style: polish structural hierarchy
 
+- Verification step at 18:47:28.202 : refactor: abstract layout props
+
