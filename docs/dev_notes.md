@@ -75,3 +75,5 @@
 
 - Verification step at 18:47:26.186 : docs: update architecture review
 
+- Verification step at 18:47:26.283 : style: verify standard formats
+
