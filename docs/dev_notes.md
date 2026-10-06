@@ -13,3 +13,5 @@
 
 - perf: optimize render loops
 
+- fix: correct minor typo
+
