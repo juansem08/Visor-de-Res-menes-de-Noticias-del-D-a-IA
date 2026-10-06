@@ -45,3 +45,5 @@
 
 - chore: run linter
 
+- refactor: rename variables for clarity
+
