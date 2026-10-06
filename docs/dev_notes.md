@@ -41,3 +41,5 @@
 
 - perf: memoize expensive calculations
 
+- test: update snapshots
+
