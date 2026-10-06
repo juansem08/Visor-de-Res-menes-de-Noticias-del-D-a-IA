@@ -5,3 +5,5 @@
 
 - refactor: organize imports
 
+- style: improve code formatting
+
