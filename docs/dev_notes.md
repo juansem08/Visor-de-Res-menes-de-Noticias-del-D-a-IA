@@ -69,3 +69,5 @@
 
 - docs: add architecture diagram placeholder
 
+- chore: review code changes
+
