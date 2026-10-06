@@ -27,3 +27,5 @@
 
 - ci: prepare github actions
 
+- feat: add error boundary skeleton
+
