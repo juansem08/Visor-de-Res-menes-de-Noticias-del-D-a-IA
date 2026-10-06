@@ -115,3 +115,5 @@
 
 - Verification step at 18:47:28.202 : refactor: abstract layout props
 
+- Verification step at 18:47:28.299 : docs: add verification checks log
+
