@@ -51,3 +51,5 @@
 
 - fix: handle null response
 
+- docs: document component props
+
