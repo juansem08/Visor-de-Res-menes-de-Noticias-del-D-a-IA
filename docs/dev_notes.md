@@ -89,3 +89,5 @@
 
 - Verification step at 18:47:26.869 : perf: measure initial load skeleton
 
+- Verification step at 18:47:26.971 : fix: correct html lang tag in layout
+
