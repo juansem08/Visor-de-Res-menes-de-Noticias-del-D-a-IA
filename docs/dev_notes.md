@@ -21,3 +21,5 @@
 
 - style: adjust indentation
 
+- docs: add api endpoint descriptions
+
