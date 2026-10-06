@@ -25,3 +25,5 @@
 
 - chore: configure environment variables template
 
+- ci: prepare github actions
+
