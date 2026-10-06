@@ -29,3 +29,5 @@
 
 - feat: add error boundary skeleton
 
+- fix: handle edge case in data fetch
+
