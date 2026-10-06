@@ -109,3 +109,5 @@
 
 - Verification step at 18:47:27.883 : fix: stabilize fetching state
 
+- Verification step at 18:47:27.978 : chore: normalize line endings
+
