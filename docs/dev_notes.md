@@ -59,3 +59,5 @@
 
 - test: add integration test stubs
 
+- chore: audit packages
+
