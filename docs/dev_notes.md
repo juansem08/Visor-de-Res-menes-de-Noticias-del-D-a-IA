@@ -67,3 +67,5 @@
 
 - fix: resolve promise correctly
 
+- docs: add architecture diagram placeholder
+
