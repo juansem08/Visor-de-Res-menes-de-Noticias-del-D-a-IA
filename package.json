@@ -19,7 +19,7 @@
                  ],
     "author":  "",
     "license":  "ISC",
-    "type":  "commonjs",
+    "type":  "module",
     "bugs":  {
                  "url":  "https://github.com/juansem08/Visor-de-Res-menes-de-Noticias-del-D-a-IA/issues"
              },
