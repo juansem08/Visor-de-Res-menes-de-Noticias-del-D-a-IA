@@ -20,7 +20,6 @@ export default function WatchApp() {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Motor Gemini conectado al estado global de temas
   const fetchCuratedNews = useCallback(async (temas: string[]) => {
     setLoading(true);
     setError(null);
@@ -42,6 +41,29 @@ export default function WatchApp() {
     fetchCuratedNews(temasPreferidos);
   }, [temasPreferidos, fetchCuratedNews]);
 
+  // 3. LÓGICA DEL HISTORIAL (Al avanzar, agrega al inicio con tope de 10)
+  const avanzarNoticia = () => {
+    if (news.length === 0) return;
+
+    const noticiaActual = news[indiceActual];
+    if (noticiaActual) {
+      const itemConFecha: NewsItem = {
+        ...noticiaActual,
+        leidoEn: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      };
+
+      setHistorial(prevHistorial => {
+        // Prevenir duplicados y agregar al inicio
+        const filtrado = prevHistorial.filter(item => item.id !== itemConFecha.id);
+        const nuevo = [itemConFecha, ...filtrado];
+        // Limitar array a los últimos 10 elementos para no saturar la memoria del reloj
+        return nuevo.slice(0, 10);
+      });
+    }
+
+    setIndiceActual(prev => (prev + 1) % news.length);
+  };
+
   return (
     <div style={{ padding: 20, color: '#fff', background: '#0B0D17', minHeight: '100vh' }}>
       <h2>Visor de Resúmenes de Noticias del Día - DailyBrief AI</h2>
@@ -49,12 +71,13 @@ export default function WatchApp() {
       <nav style={{ display: 'flex', gap: 10 }}>
         <button onClick={() => setVistaActual('feed')}>Feed</button>
         <button onClick={() => setVistaActual('ajustes')}>Ajustes</button>
-        <button onClick={() => setVistaActual('historial')}>Historial ({historial.length})</button>
+        <button onClick={() => setVistaActual('historial')}>Historial ({historial.length}/10)</button>
       </nav>
       {loading ? <p>Cargando noticias...</p> : error ? <p>{error}</p> : (
         <div>
           <h3>{news[indiceActual]?.titular}</h3>
           <p>{news[indiceActual]?.resumen}</p>
+          <button onClick={avanzarNoticia}>Siguiente Noticia (Guardar en Historial)</button>
         </div>
       )}
     </div>
