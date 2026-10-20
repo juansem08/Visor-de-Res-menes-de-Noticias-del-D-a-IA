@@ -19,6 +19,7 @@ export default function WatchApp() {
   const [indiceActual, setIndiceActual] = useState<number>(0);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [toastAlerta, setToastAlerta] = useState<string | null>(null);
 
   const fetchCuratedNews = useCallback(async (temas: string[]) => {
     setLoading(true);
@@ -53,10 +54,8 @@ export default function WatchApp() {
       };
 
       setHistorial(prevHistorial => {
-        // Prevenir duplicados y agregar al inicio
         const filtrado = prevHistorial.filter(item => item.id !== itemConFecha.id);
         const nuevo = [itemConFecha, ...filtrado];
-        // Limitar array a los últimos 10 elementos para no saturar la memoria del reloj
         return nuevo.slice(0, 10);
       });
     }
@@ -64,15 +63,36 @@ export default function WatchApp() {
     setIndiceActual(prev => (prev + 1) % news.length);
   };
 
+  // 4. SIMULACIÓN DE PROGRAMACIÓN DE HORA (CRONJOB NATIVO WEAR OS)
+  const programarAlerta = (hora: string) => {
+    setHoraNotificacion(hora);
+    console.log(`[Wear OS Native AlarmManager] Cronjob registrado para las ${hora} hs.`);
+    console.log(`[Wear OS Sync] Sincronizacion en segundo plano para temas: [${temasPreferidos.join(', ')}]`);
+    setToastAlerta(`⏰ Alerta Wear OS: Cronjob programado para las ${hora}`);
+    setTimeout(() => setToastAlerta(null), 3500);
+  };
+
   return (
     <div style={{ padding: 20, color: '#fff', background: '#0B0D17', minHeight: '100vh' }}>
       <h2>Visor de Resúmenes de Noticias del Día - DailyBrief AI</h2>
+      {toastAlerta && <div style={{ background: '#8B5CF6', padding: 8, borderRadius: 6 }}>{toastAlerta}</div>}
       <p>Vista actual: {vistaActual} | Hora alerta: {horaNotificacion}</p>
+      
+      <div style={{ margin: '10px 0' }}>
+        <input 
+          type="time" 
+          value={horaNotificacion} 
+          onChange={(e) => setHoraNotificacion(e.target.value)} 
+        />
+        <button onClick={() => programarAlerta(horaNotificacion)}>Programar Alerta</button>
+      </div>
+
       <nav style={{ display: 'flex', gap: 10 }}>
         <button onClick={() => setVistaActual('feed')}>Feed</button>
         <button onClick={() => setVistaActual('ajustes')}>Ajustes</button>
         <button onClick={() => setVistaActual('historial')}>Historial ({historial.length}/10)</button>
       </nav>
+
       {loading ? <p>Cargando noticias...</p> : error ? <p>{error}</p> : (
         <div>
           <h3>{news[indiceActual]?.titular}</h3>
